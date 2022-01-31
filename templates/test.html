@@ -18,8 +18,8 @@
             <br><br><br>
         <div class="row ">
             
-            <div class="col-md-4 me-auto">
-                <h3 class="text-center text-primary">Add Task</h3>
+            <div class="col-md-5 m-auto shadow">
+                <h3 class="text-center text-primary m-3">Add Task</h3>
                 <br>
                 <form action="">
                     {% csrf_token %}
@@ -27,16 +27,16 @@
                         <span class="input-group-text">Name: </span>
                         <input type="text" class="form-control" required v-model="newTaskValue">
                     </div>
-                    <div>
-                        <button class="btn btn-success mt-3" type="submit" @click="submitNewTask()">Submit</button>
+                    <div class="text-center">
+                        <button class="btn btn-success m-3 text-center" type="submit" @click="submitNewTask()">Submit</button>
                     </div>
                 </form>
             </div>
             
-            <div class="col-md-6" >
-                <h3 class="text-center text-primary">List Task</h3>
-                <div class="row">
-                    <table>
+            <div class="col-md-6 shadow" >
+                <h3 class="text-center text-primary m-3">List Task</h3>
+                <div class="row p-4">
+                    <table >
                         <thead>
                             <th>Name</th>
                             <th>Action</th>
